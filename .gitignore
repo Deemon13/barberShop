@@ -1,5 +1,8 @@
+#Junk
+.DS_Store
 .vscode/
-.vscode
+.idea/
+
 .prettierrc.yaml
 
 # Logs
