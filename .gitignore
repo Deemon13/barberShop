@@ -1,9 +1,10 @@
+.prettierrc.json
+.prettierrc.yaml
+
 #Junk
 .DS_Store
 .vscode/
 .idea/
-
-.prettierrc.yaml
 
 # Logs
 logs
