@@ -54,6 +54,7 @@
   --main-bg-color: #ffffff;
   --secondary-bg-color: #191c26;
   --alternative-light-bg-color: #f7f7f7;
+  --alternative-dark-bg-color: #111319;
 
   --main-dark-text-color: #555555;
   --secondary-dark-text-color: #303030;
@@ -180,9 +181,9 @@ header {
   color: var(--main-light-text-color);
 }
 
-/* SECTION-ABOUT US */
+/* SECTION - ABOUT US */
 
-.section-subtitle {
+.about-us-subtitle {
   font-weight: 600;
   font-size: 11px;
   line-height: 1.18;
@@ -192,7 +193,7 @@ header {
   color: var(--secondary-dark-text-color);
 }
 
-.section-title {
+.about-us-title {
   font-family: "Raleway";
   font-weight: 700;
   font-size: 42px;
@@ -202,11 +203,258 @@ header {
   color: var(--secondary-dark-text-color);
 }
 
-.section-text {
+.about-us-text {
   font-weight: 400;
   font-size: 18px;
   line-height: 1.67;
   letter-spacing: 0.02em;
 
   color: var(--main-dark-text-color);
+}
+
+/* SECTION - SERVICES */
+
+.sevices {
+  background-color: var(--alternative-dark-bg-color);
+}
+
+.sevices-subtitle {
+font-weight: 600;
+font-size: 11px;
+line-height: 1.36;
+letter-spacing: 0.1em;
+text-transform: uppercase;
+
+color: var(--main-subtitles-text-color);
+}
+
+.sevices-title {
+font-family: 'Raleway';
+font-weight: 700;
+font-size: 42px;
+line-height: 1.17;
+letter-spacing: 0.05em;
+
+color: var(--secondary-light-text-color);
+}
+
+.sevices-text {
+font-weight: 400;
+font-size: 18px;
+line-height: 1.67;
+letter-spacing: 0.02em;
+
+color: var(--main-light-text-color);
+}
+
+/* SECTION - ADVANTAGES */
+
+.advantages-item {
+background-color: var(--alternative-light-bg-color);
+}
+
+.advantages-numbers {
+font-weight: 700;
+font-size: 42px;
+line-height: 1.36;
+text-align: center;
+letter-spacing: 0.05em;
+
+color: var(--secondary-dark-text-color);
+}
+
+.advantages-plus {
+font-weight: 600;
+font-size: 16px;
+line-height: 1.38;
+text-align: center;
+
+color: var(--accent-color);
+}
+
+.advantages-subscr {
+font-weight: 600;
+font-size: 11px;
+line-height: 1.36;
+text-align: center;
+
+color: var(--secondary-dark-text-color);
+}
+
+.advantages-subtitle {
+font-weight: 600;
+font-size: 11px;
+line-height: 1.36;
+letter-spacing: 0.1em;
+text-transform: uppercase;
+
+color: var(--secondary-dark-text-color);
+}
+
+.advantages-title {
+font-family: 'Raleway';
+font-weight: 700;
+font-size: 42px;
+line-height: 1.17;
+letter-spacing: 0.05em;
+
+color: var(--secondary-dark-text-color);
+}
+
+.advantages-text {
+font-weight: 400;
+font-size: 18px;
+line-height: 1.67;
+letter-spacing: 0.02em;
+
+color: var(--main-dark-text-color);
+}
+
+/* SECTION - TEAM */
+
+.team {
+background-color: var(--alternative-light-bg-color);
+}
+
+.team-subtitle {
+font-weight: 600;
+font-size: 11px;
+line-height: 1.36;
+letter-spacing: 0.1em;
+text-transform: uppercase;
+
+color: var(--secondary-dark-text-color);
+}
+
+.team-title {
+font-family: 'Raleway';
+font-weight: 700;
+font-size: 42px;
+line-height: 1.17;
+letter-spacing: 0.05em;
+
+color: var(--secondary-dark-text-color);
+}
+
+.team-name {
+font-weight: 400;
+font-size: 18px;
+line-height: 1.39;
+text-align: center;
+letter-spacing: 0.02em;
+
+color: var(--secondary-dark-text-color);
+}
+
+.team-prof {
+font-weight: 400;
+font-size: 14px;
+line-height: 1.36;
+text-align: center;
+letter-spacing: 0.02em;
+
+color: var(--accent-color);
+}
+
+/* SECTION - PORTFOLIO */
+
+.portfolio-subtitle {
+font-weight: 600;
+font-size: 11px;
+line-height: 1.36;
+letter-spacing: 0.1em;
+text-transform: uppercase;
+
+color: var(--secondary-dark-text-color);
+}
+
+.portfolio-title {
+font-family: 'Raleway';
+font-weight: 700;
+font-size: 42px;
+line-height: 1.17;
+letter-spacing: 0.05em;
+
+color: var(--secondary-dark-text-color);
+}
+
+/* SECTION - SUBSCRIBE & CONTACTS */
+
+.subscribe {
+  background-color: var(--secondary-bg-color);
+}
+
+.subscribe-title {
+font-family: 'Raleway';
+font-weight: 700;
+font-size: 42px;
+line-height: 1.17;
+letter-spacing: 0.05em;
+
+color: var(--secondary-light-text-color);
+}
+
+.subscribe-address {
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 1.67;
+letter-spacing: 0.02em;
+
+color: var(--main-light-text-color);
+}
+
+.subscribe-link, .subscribe-mail {
+color: var(--main-light-text-color);
+}
+
+.subscribe-link:hover, .subscribe-mail:hover, .subscribe-link:focus, .subscribe-mail:focus {
+color: var(--accent-color);
+}
+
+.subscribe-subtitle {
+font-weight: 600;
+font-size: 11px;
+line-height: 1.18;
+letter-spacing: 0.1em;
+text-transform: uppercase;
+
+color: var(--secondary-light-text-color);
+}
+
+.subscribe-text {
+font-weight: 400;
+font-size: 18px;
+line-height: 1.67;
+letter-spacing: 0.02em;
+
+color: var(--main-light-text-color);
+}
+
+/* FOOTER */
+
+.footer {
+background-color: var(--alternative-light-bg-color);
+}
+
+.footer-copyright {
+font-weight: 600;
+font-size: 11px;
+line-height: 1.36;
+letter-spacing: 0.2em;
+
+color: var(--main-light-text-color);
+}
+
+.footer-link {
+font-weight: 600;
+font-size: 11px;
+line-height: 1.36;
+letter-spacing: 0.2em;
+
+color: var(--secondary-dark-text-color);
+}
+
+.footer-link:hover, .footer-link:focus {
+  color: var(--accent-color);
 }
