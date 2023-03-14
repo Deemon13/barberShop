@@ -1,0 +1,212 @@
+/* COLORS */
+/* main bg color - #FFFFFF + */
+/* section team, footer bg color - #F7F7F7 + */
+/* subscribe bg color - #191C26 + */
+
+/* accent color - #FF6C00 - link-hover, button-border-color, plus-advantages-section, text-team-section + */
+/* main font color - #555555 - section-text-light-bg, section-titles, text-buttons-portfolio*/
+/* text color - #9DA4BD - section-text-dark-bg + */
+/* subtitle color - #9DA4BD 60% - subtitles-dark-bg + */
+/* form color - #9DA4BD 40% - placeholder-form +  */
+/* dots color - #9DA4BD 12% - dots-section-services + */
+/* secondary font color - #303030 - social-links-aside, mail-header, tel-header, section-subitles-light-bg, section-titles-light-bg + */
+/* alternative white font color - #ffffff - hero-title, links-header, tel-header, button-dark-bg, section-titles-dark-bg + */
+
+/* FONTS */
+/* Raleway bold (700) - title*/
+/* OpenSans Semibold (600) - links-header, subtitle, social-links-aside*/
+/* OpenSans regular (400) - text*/
+
+/* .declaration-order {
+    // Positioning
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 100;
+  
+    // Box model
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+  
+    // Typography
+    font: normal 14px "Helvetica Neue", sans-serif;
+    line-height: 1.5;
+    color: #333;
+    text-align: center;
+    text-decoration: underline;
+  
+    // Visual
+    background-color: #f5f5f5;
+    border: 1px solid #e5e5e5;
+    border-radius: 3px;
+  
+    // Misc
+    opacity: 1;
+  } */
+
+:root {
+  --main-bg-color: #ffffff;
+  --secondary-bg-color: #191c26;
+  --alternative-light-bg-color: #f7f7f7;
+
+  --main-dark-text-color: #555555;
+  --secondary-dark-text-color: #303030;
+  --main-light-text-color: #9da4bd;
+  --main-subtitles-text-color: rgba(157, 164, 189, 0.6);
+  --secondary-light-text-color: #ffffff;
+  --accent-color: #ff6c00;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+
+  background-color: var(--main-bg-color);
+  color: var(--main-dark-text-color);
+}
+
+header {
+  background-color: var(--secondary-bg-color);
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+/* HEADER-NAVIGATION */
+
+.nav-link,
+.tel-link {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.1em;
+
+  color: var(--secondary-light-text-color);
+}
+
+.nav-link:hover,
+.tel-link:hover,
+.nav-link:focus,
+.tel-link:focus {
+  color: var(--accent-color);
+}
+
+.btn {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+
+  background-color: transparent;
+}
+
+.btn-light {
+  color: var(--secondary-light-text-color);
+}
+
+.btn-dark {
+  color: var(--secondary-dark-text-color);
+}
+
+.btn:hover,
+.btn:focus {
+  color: var(--accent-color);
+}
+
+/* HERO-ASIDE */
+
+.social-link {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.2em;
+
+  color: var(--secondary-dark-text-color);
+
+  /* transform: rotate(-90deg); */
+}
+
+.social-link:hover,
+.social-link:focus {
+  color: var(--accent-color);
+}
+
+/* HERO */
+
+.hero {
+  background-color: var(--secondary-bg-color);
+}
+
+.hero-subtitle {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+
+  color: var(--main-subtitles-text-color);
+}
+
+.hero-title {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 1.18;
+  letter-spacing: 0.05em;
+
+  color: var(--secondary-light-text-color);
+}
+
+.hero-text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+
+  color: var(--main-light-text-color);
+}
+
+/* SECTION-ABOUT US */
+
+.section-subtitle {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.18;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+
+  color: var(--secondary-dark-text-color);
+}
+
+.section-title {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.17;
+  letter-spacing: 0.05em;
+
+  color: var(--secondary-dark-text-color);
+}
+
+.section-text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+
+  color: var(--main-dark-text-color);
+}

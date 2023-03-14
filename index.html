@@ -5,37 +5,54 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>barber-shop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Raleway:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <!-- HEADER -->
     <header>
       <nav>
-        <img src="./images/header/Logo.svg" alt="Логотип" width="70" height="56" />
-        <ul>
-          <li><a href="">О нас</a></li>
-          <li><a href="">Услуги и цены</a></li>
-          <li><a href="">Мастера</a></li>
-          <li><a href="">Контакты</a></li>
+        <a href="./index.html">
+          <img
+            src="./images/header/Logo.svg"
+            alt="Логотип"
+            width="70"
+            height="56"
+          />
+        </a>
+        <ul class="nav-list list">
+          <li><a href="./index.html" class="nav-link link">О нас</a></li>
+          <li><a href="" class="nav-link link">Услуги и цены</a></li>
+          <li><a href="" class="nav-link link">Мастера</a></li>
+          <li><a href="" class="nav-link link">Контакты</a></li>
         </ul>
       </nav>
-      <a href="tel:+380441111111">+38 044 111 11 11</a>
-      <button type="button">онлайн-запись</button>
+      <a href="tel:+380441111111" class="tel-link link">+38 044 111 11 11</a>
+      <button type="button" class="btn btn-light">онлайн-запись</button>
     </header>
     <main>
       <!-- HERO -->
-      <section>
-        <ul>
-          <li><a href="">Instagram</a></li>
-          <li><a href="">Youtube</a></li>
+      <section class="hero">
+        <ul class="social-list list">
+          <li><a href="" class="social-link link">Instagram</a></li>
+          <li><a href="" class="social-link link">Youtube</a></li>
         </ul>
-        <p lang="en">A hair salon for men in Kyiv</p>
-        <h1 lang="en">BarberShop</h1>
-        <p>Мы эксперты в модных мужских стрижках. Работаем быстро, осторожно и со вкусом.</p>
+        <p lang="en" class="hero-subtitle">A hair salon for men in Kyiv</p>
+        <h1 lang="en" class="hero-title">BarberShop</h1>
+        <p class="hero-text">
+          Мы эксперты в модных мужских стрижках. Работаем быстро, осторожно и со
+          вкусом.
+        </p>
       </section>
 
       <!-- SECTION-ABOUT US -->
       <section>
-        <ul>
+        <ul class="list">
           <li>
             <img
               src="./images/about-us/shaving-beard-desktop-opt.jpg"
@@ -53,16 +70,20 @@
             />
           </li>
         </ul>
-        <p>О нас</p>
-        <h2>Лучший Барбершоп твоего города</h2>
-        <p>Если ты хочешь добавить в свой образ больше уверенности – тебе точно к нам.</p>
-        <p>
-          Мы команда, которая никогда не останавливается на достигнутом и жаждет перемен. И когда ты
-          попадешь в руки нашего мастера, то уже никогда не сможешь быть прежним. Мы команда,
-          которая всегда с клиентами "на одной волне". Поэтому, мы всегда готовы усовершенствовать
-          каждого, кто к нам приходит!
+        <p class="section-subtitle">О нас</p>
+        <h2 class="section-title">Лучший Барбершоп твоего города</h2>
+        <p class="section-text">
+          Если ты хочешь добавить в свой образ больше уверенности – тебе точно к
+          нам.
         </p>
-        <button type="button">онлайн-запись</button>
+        <p class="section-text">
+          Мы команда, которая никогда не останавливается на достигнутом и жаждет
+          перемен. И когда ты попадешь в руки нашего мастера, то уже никогда не
+          сможешь быть прежним. Мы команда, которая всегда с клиентами "на одной
+          волне". Поэтому, мы всегда готовы усовершенствовать каждого, кто к нам
+          приходит!
+        </p>
+        <button type="button" class="btn btn-dark">онлайн-запись</button>
       </section>
 
       <!-- SECTION-SERVICES -->
@@ -131,8 +152,8 @@
         <p>старая традиционная школа</p>
         <h2>Почему приходят именно к нам?</h2>
         <p>
-          О нас говорят только хорошее. Но лучше 1 раз увидеть и прочувtствовать, чем 10 раз
-          прочитать.
+          О нас говорят только хорошее. Но лучше 1 раз увидеть и
+          прочувtствовать, чем 10 раз прочитать.
         </p>
       </section>
 
