@@ -1,55 +1,3 @@
-/* COLORS */
-/* main bg color - #FFFFFF + */
-/* section team, footer bg color - #F7F7F7 + */
-/* subscribe bg color - #191C26 + */
-
-/* accent color - #FF6C00 - link-hover, button-border-color, plus-advantages-section, text-team-section + */
-/* main font color - #555555 - section-text-light-bg, section-titles, text-buttons-portfolio*/
-/* text color - #9DA4BD - section-text-dark-bg + */
-/* subtitle color - #9DA4BD 60% - subtitles-dark-bg + */
-/* form color - #9DA4BD 40% - placeholder-form +  */
-/* dots color - #9DA4BD 12% - dots-section-services + */
-/* secondary font color - #303030 - social-links-aside, mail-header, tel-header, section-subitles-light-bg, section-titles-light-bg + */
-/* alternative white font color - #ffffff - hero-title, links-header, tel-header, button-dark-bg, section-titles-dark-bg + */
-
-/* FONTS */
-/* Raleway bold (700) - title*/
-/* OpenSans Semibold (600) - links-header, subtitle, social-links-aside*/
-/* OpenSans regular (400) - text*/
-
-/* .declaration-order {
-    // Positioning
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: 100;
-  
-    // Box model
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100px;
-    height: 100px;
-  
-    // Typography
-    font: normal 14px "Helvetica Neue", sans-serif;
-    line-height: 1.5;
-    color: #333;
-    text-align: center;
-    text-decoration: underline;
-  
-    // Visual
-    background-color: #f5f5f5;
-    border: 1px solid #e5e5e5;
-    border-radius: 3px;
-  
-    // Misc
-    opacity: 1;
-  } */
-
 :root {
   --main-bg-color: #ffffff;
   --secondary-bg-color: #191c26;
@@ -57,17 +5,18 @@
   --alternative-dark-bg-color: #111319;
 
   --main-dark-text-color: #555555;
-  --secondary-dark-text-color: #303030;
   --main-light-text-color: #9da4bd;
-  --main-subtitles-text-color: rgba(157, 164, 189, 0.6);
+  --subtitles-text-color: rgba(157, 164, 189, 0.6); /* #9da4bd 60% */
+  --placeholder-text-color: rgba(157, 164, 189, 0.4); /* #9da4bd 40% */
+  --dots-color: rgba(157, 164, 189, 0.12); /* #9da4bd 12% */
+  --secondary-dark-text-color: #303030;
   --secondary-light-text-color: #ffffff;
+
   --accent-color: #ff6c00;
 }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-style: normal;
 
   background-color: var(--main-bg-color);
@@ -84,6 +33,49 @@ header {
 
 .link {
   text-decoration: none;
+}
+
+.subtitle {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.subtitle-light {
+  color: var(--subtitles-text-color);
+}
+
+.subtitle-dark {
+  color: var(--secondary-dark-text-color);
+}
+
+.title {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.17;
+  letter-spacing: 0.05em;
+}
+
+.title-light {
+  color: var(--secondary-light-text-color);
+}
+
+.title-dark {
+  color: var(--secondary-dark-text-color);
+}
+
+.text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+}
+
+.text-light {
+  color: var(--main-light-text-color);
 }
 
 /* HEADER-NAVIGATION */
@@ -130,19 +122,17 @@ header {
 
 /* HERO-ASIDE */
 
-.social-link {
+.link-social {
   font-weight: 600;
   font-size: 11px;
   line-height: 1.36;
   letter-spacing: 0.2em;
 
   color: var(--secondary-dark-text-color);
-
-  /* transform: rotate(-90deg); */
 }
 
-.social-link:hover,
-.social-link:focus {
+.link-social:hover,
+.link-social:focus {
   color: var(--accent-color);
 }
 
@@ -152,64 +142,15 @@ header {
   background-color: var(--secondary-bg-color);
 }
 
-.hero-subtitle {
-  font-weight: 600;
-  font-size: 11px;
-  line-height: 1.36;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-
-  color: var(--main-subtitles-text-color);
-}
-
-.hero-title {
-  font-family: "Raleway", sans-serif;
-  font-weight: 700;
+.title-hero {
   font-size: 72px;
   line-height: 1.18;
-  letter-spacing: 0.05em;
-
-  color: var(--secondary-light-text-color);
-}
-
-.hero-text {
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 1.67;
-  letter-spacing: 0.02em;
-
-  color: var(--main-light-text-color);
 }
 
 /* SECTION - ABOUT US */
 
-.about-us-subtitle {
-  font-weight: 600;
-  font-size: 11px;
+.subtitle-about-us {
   line-height: 1.18;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-
-  color: var(--secondary-dark-text-color);
-}
-
-.about-us-title {
-  font-family: "Raleway";
-  font-weight: 700;
-  font-size: 42px;
-  line-height: 1.17;
-  letter-spacing: 0.05em;
-
-  color: var(--secondary-dark-text-color);
-}
-
-.about-us-text {
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 1.67;
-  letter-spacing: 0.02em;
-
-  color: var(--main-dark-text-color);
 }
 
 /* SECTION - SERVICES */
@@ -218,165 +159,67 @@ header {
   background-color: var(--alternative-dark-bg-color);
 }
 
-.sevices-subtitle {
-font-weight: 600;
-font-size: 11px;
-line-height: 1.36;
-letter-spacing: 0.1em;
-text-transform: uppercase;
-
-color: var(--main-subtitles-text-color);
-}
-
-.sevices-title {
-font-family: 'Raleway';
-font-weight: 700;
-font-size: 42px;
-line-height: 1.17;
-letter-spacing: 0.05em;
-
-color: var(--secondary-light-text-color);
-}
-
-.sevices-text {
-font-weight: 400;
-font-size: 18px;
-line-height: 1.67;
-letter-spacing: 0.02em;
-
-color: var(--main-light-text-color);
-}
-
 /* SECTION - ADVANTAGES */
 
 .advantages-item {
-background-color: var(--alternative-light-bg-color);
+  background-color: var(--alternative-light-bg-color);
 }
 
 .advantages-numbers {
-font-weight: 700;
-font-size: 42px;
-line-height: 1.36;
-text-align: center;
-letter-spacing: 0.05em;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.05em;
 
-color: var(--secondary-dark-text-color);
+  color: var(--secondary-dark-text-color);
 }
 
 .advantages-plus {
-font-weight: 600;
-font-size: 16px;
-line-height: 1.38;
-text-align: center;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.38;
+  text-align: center;
 
-color: var(--accent-color);
+  color: var(--accent-color);
 }
 
 .advantages-subscr {
-font-weight: 600;
-font-size: 11px;
-line-height: 1.36;
-text-align: center;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  text-align: center;
 
-color: var(--secondary-dark-text-color);
-}
-
-.advantages-subtitle {
-font-weight: 600;
-font-size: 11px;
-line-height: 1.36;
-letter-spacing: 0.1em;
-text-transform: uppercase;
-
-color: var(--secondary-dark-text-color);
-}
-
-.advantages-title {
-font-family: 'Raleway';
-font-weight: 700;
-font-size: 42px;
-line-height: 1.17;
-letter-spacing: 0.05em;
-
-color: var(--secondary-dark-text-color);
-}
-
-.advantages-text {
-font-weight: 400;
-font-size: 18px;
-line-height: 1.67;
-letter-spacing: 0.02em;
-
-color: var(--main-dark-text-color);
+  color: var(--secondary-dark-text-color);
 }
 
 /* SECTION - TEAM */
 
 .team {
-background-color: var(--alternative-light-bg-color);
-}
-
-.team-subtitle {
-font-weight: 600;
-font-size: 11px;
-line-height: 1.36;
-letter-spacing: 0.1em;
-text-transform: uppercase;
-
-color: var(--secondary-dark-text-color);
-}
-
-.team-title {
-font-family: 'Raleway';
-font-weight: 700;
-font-size: 42px;
-line-height: 1.17;
-letter-spacing: 0.05em;
-
-color: var(--secondary-dark-text-color);
+  background-color: var(--alternative-light-bg-color);
 }
 
 .team-name {
-font-weight: 400;
-font-size: 18px;
-line-height: 1.39;
-text-align: center;
-letter-spacing: 0.02em;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.39;
+  text-align: center;
+  letter-spacing: 0.02em;
 
-color: var(--secondary-dark-text-color);
+  color: var(--secondary-dark-text-color);
 }
 
 .team-prof {
-font-weight: 400;
-font-size: 14px;
-line-height: 1.36;
-text-align: center;
-letter-spacing: 0.02em;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.02em;
 
-color: var(--accent-color);
+  color: var(--accent-color);
 }
 
 /* SECTION - PORTFOLIO */
-
-.portfolio-subtitle {
-font-weight: 600;
-font-size: 11px;
-line-height: 1.36;
-letter-spacing: 0.1em;
-text-transform: uppercase;
-
-color: var(--secondary-dark-text-color);
-}
-
-.portfolio-title {
-font-family: 'Raleway';
-font-weight: 700;
-font-size: 42px;
-line-height: 1.17;
-letter-spacing: 0.05em;
-
-color: var(--secondary-dark-text-color);
-}
 
 /* SECTION - SUBSCRIBE & CONTACTS */
 
@@ -384,77 +227,39 @@ color: var(--secondary-dark-text-color);
   background-color: var(--secondary-bg-color);
 }
 
-.subscribe-title {
-font-family: 'Raleway';
-font-weight: 700;
-font-size: 42px;
-line-height: 1.17;
-letter-spacing: 0.05em;
-
-color: var(--secondary-light-text-color);
+.text-address {
+  font-style: normal;
 }
 
-.subscribe-address {
-font-style: normal;
-font-weight: 400;
-font-size: 18px;
-line-height: 1.67;
-letter-spacing: 0.02em;
-
-color: var(--main-light-text-color);
+.subscribe-link,
+.subscribe-mail {
+  color: var(--main-light-text-color);
 }
 
-.subscribe-link, .subscribe-mail {
-color: var(--main-light-text-color);
+.subscribe-link:hover,
+.subscribe-mail:hover,
+.subscribe-link:focus,
+.subscribe-mail:focus {
+  color: var(--accent-color);
 }
 
-.subscribe-link:hover, .subscribe-mail:hover, .subscribe-link:focus, .subscribe-mail:focus {
-color: var(--accent-color);
-}
+.subtitle-contacts {
+  line-height: 1.18;
 
-.subscribe-subtitle {
-font-weight: 600;
-font-size: 11px;
-line-height: 1.18;
-letter-spacing: 0.1em;
-text-transform: uppercase;
-
-color: var(--secondary-light-text-color);
-}
-
-.subscribe-text {
-font-weight: 400;
-font-size: 18px;
-line-height: 1.67;
-letter-spacing: 0.02em;
-
-color: var(--main-light-text-color);
+  color: var(--secondary-light-text-color);
 }
 
 /* FOOTER */
 
 .footer {
-background-color: var(--alternative-light-bg-color);
+  background-color: var(--alternative-light-bg-color);
 }
 
 .footer-copyright {
-font-weight: 600;
-font-size: 11px;
-line-height: 1.36;
-letter-spacing: 0.2em;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.2em;
 
-color: var(--main-light-text-color);
-}
-
-.footer-link {
-font-weight: 600;
-font-size: 11px;
-line-height: 1.36;
-letter-spacing: 0.2em;
-
-color: var(--secondary-dark-text-color);
-}
-
-.footer-link:hover, .footer-link:focus {
-  color: var(--accent-color);
+  color: var(--main-light-text-color);
 }
