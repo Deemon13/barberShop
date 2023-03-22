@@ -23,6 +23,11 @@ body {
   color: var(--main-dark-text-color);
 }
 
+.section {
+  padding-top: 130px;
+  padding-bottom: 130px;
+}
+
 .container {
   width: 1200px;
   margin-right: auto;
@@ -198,7 +203,53 @@ body {
   background-color: var(--accent-color);
 } */
 
+/* HERO */
+
+.container-hero {
+  display: flex;
+}
+
+.hero-background {
+  display: flex;
+  align-items: center;
+  width: 90%;
+  min-height: 680px;
+  padding-left: 100px;
+
+  background-color: var(--secondary-bg-color);
+}
+
+/* .hero-content {
+  margin-top: auto;
+  margin-bottom: auto;
+} */
+
+.subtitle-hero {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.title-hero {
+  margin-top: 0;
+  margin-bottom: 20px;
+
+  font-size: 72px;
+  line-height: 1.18;
+}
+
+.text-hero {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 /* HERO-ASIDE */
+
+.social-list {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  width: 10%;
+}
 
 .link-social {
   font-weight: 600;
@@ -214,27 +265,78 @@ body {
   color: var(--accent-color);
 }
 
-/* HERO */
-
-.hero {
-  background-color: var(--secondary-bg-color);
-}
-
-.title-hero {
-  font-size: 72px;
-  line-height: 1.18;
-}
-
 /* SECTION - ABOUT US */
 
-.subtitle-about-us {
+.container-about {
+  display: flex;
+}
+
+.about-list {
+  display: flex;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  margin-right: 64px;
+}
+
+.about-list-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.subtitle-about {
+  margin-top: 0;
+  margin-bottom: 20px;
+
   line-height: 1.18;
+}
+
+.title-about {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.text-about {
+  margin-top: 0;
+  margin-bottom: 20px;
+
+  font-size: 14px;
+  line-height: 1.86;
+}
+
+.text-about-last {
+  margin-bottom: 40px;
 }
 
 /* SECTION - SERVICES */
 
-.sevices {
+.section-sevices {
   background-color: var(--alternative-dark-bg-color);
+}
+
+.container-services {
+  text-align: center;
+}
+
+.subtitle-services {
+  margin-top: 0;
+  margin-bottom: 20px;
+
+  text-align: left;
+}
+
+.title-services {
+  margin-top: 0;
+  margin-bottom: 44px;
+
+  text-align: left;
+}
+
+.services-list {
+  margin-top: 0;
+  margin-bottom: 50px;
+  padding-left: 0;
+  display: flex;
+  justify-content: center;
 }
 
 /* SECTION - ADVANTAGES */
