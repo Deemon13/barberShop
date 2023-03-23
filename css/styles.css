@@ -26,6 +26,7 @@ body {
 .section {
   padding-top: 130px;
   padding-bottom: 130px;
+  outline: 1px solid greenyellow;
 }
 
 .container {
@@ -339,13 +340,86 @@ body {
   justify-content: center;
 }
 
-/* SECTION - ADVANTAGES */
+.services-list-item {
+  width: 585px;
+  padding-top: 30px;
+  padding-right: 40px;
+  padding-bottom: 30px;
+  padding-left: 40px;
 
-.advantages-item {
-  background-color: var(--alternative-light-bg-color);
+  background-color: var(--main-dark-text-color);
 }
 
+.services-left,
+.services-right {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+.services-left-item,
+.services-right-item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.services-left-item:not(:last-child),
+.services-right-item:not(:last-child) {
+  padding-bottom: 20px;
+}
+
+.services-text {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* SECTION - ADVANTAGES */
+
+.container-advantages {
+  padding-left: 114px;
+  padding-right: 114px;
+  display: flex;
+  outline: 1px solid red;
+}
+
+.advantages-list {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  margin-right: auto;
+  width: 38%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+
+  outline: 1px solid blue;
+}
+
+.advantages-item {
+  padding-top: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  flex-basis: calc((100% - 30px) / 2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: var(--alternative-light-bg-color);
+  outline: 1px solid green;
+}
+
+/* .advantages-item:nth-child(2n) {
+  margin-top: 30px;
+} */
+
 .advantages-numbers {
+  margin-top: 0;
+  margin-bottom: 6px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+
   font-weight: 700;
   font-size: 42px;
   line-height: 1.36;
@@ -365,12 +439,34 @@ body {
 }
 
 .advantages-subscr {
+  margin-top: 0;
+  margin-bottom: 0;
+
   font-weight: 600;
   font-size: 11px;
   line-height: 1.36;
   text-align: center;
 
   color: var(--secondary-dark-text-color);
+}
+
+.advantages-content {
+  width: 500px;
+}
+
+.subtitle-advantages {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.title-advantages {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.advantages-text {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 /* SECTION - TEAM */
