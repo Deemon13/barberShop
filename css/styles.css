@@ -574,30 +574,35 @@ body {
 
 /* SECTION - SUBSCRIBE & CONTACTS */
 
-.subscribe {
+.section-contacts {
   margin-right: auto;
   margin-left: auto;
   max-width: 1600px;
+  /* min-height: 644px; */
+
   background-color: var(--secondary-bg-color);
-}
-
-.container-subscribe {
-  display: flex;
-  justify-content: space-between;
-}
-
-.subscribe-content,
-.contacts-content {
-  width: 50%;
-  text-align: left;
-}
-
-.contacts-content {
   background-image: linear-gradient(
       rgba(25, 28, 38, 0.9),
       rgba(25, 28, 38, 0.9)
     ),
     url('../images/contacts/contacts-bg-desktop-opt.jpg');
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: 50%;
+}
+
+.subscribe-container {
+  display: flex;
+  justify-content: center;
+}
+
+.subscribe-content {
+  width: 50%;
+}
+
+.contacts-content {
+  width: 50%;
+  padding-left: 100px;
 }
 
 .title-subscribe,
