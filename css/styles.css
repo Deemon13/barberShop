@@ -103,7 +103,19 @@ body {
 }
 
 .logo {
+  display: block;
   margin-right: 72px;
+
+  color: var(--secondary-dark-text-color);
+}
+
+.logo svg {
+  fill: currentColor;
+}
+
+.logo:hover svg,
+.logo:focus svg {
+  fill: var(--accent-color);
 }
 
 .nav-list {
@@ -541,6 +553,38 @@ body {
   justify-content: center;
 }
 
+.list-social-item {
+  border-radius: 50%;
+
+  background-color: var(--secondary-light-text-color);
+}
+
+.list-social-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.link-social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  /* border-radius: 50%; */
+
+  color: var(--secondary-dark-text-color);
+
+  /* outline: 1px solid greenyellow; */
+}
+
+.link-social svg {
+  fill: currentColor;
+}
+
+.link-social:hover svg,
+.link-social:focus svg {
+  fill: var(--accent-color);
+}
+
 /* SECTION - PORTFOLIO */
 
 .subtitle-portfolio {
@@ -623,6 +667,10 @@ body {
 .subscribe-mail {
   display: block;
   color: var(--main-light-text-color);
+}
+
+.subscribe-mail svg {
+  fill: currentColor;
 }
 
 .subscribe-link:hover,
