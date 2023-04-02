@@ -367,7 +367,6 @@ body {
   padding-bottom: 30px;
   padding-left: 40px;
 
-  /* background-color: var(--main-dark-text-color); */
   background-image: linear-gradient(
     180deg,
     rgba(9, 11, 19, 0.2) 0%,
@@ -569,11 +568,8 @@ body {
   align-items: center;
   width: 44px;
   height: 44px;
-  /* border-radius: 50%; */
 
   color: var(--secondary-dark-text-color);
-
-  /* outline: 1px solid greenyellow; */
 }
 
 .link-social svg {
@@ -651,12 +647,27 @@ body {
 
 .address {
   margin-bottom: 66px;
+
   font-style: normal;
 }
 
 .address-text {
   margin-top: 0;
   margin-bottom: 20px;
+  padding-top: 16px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.wrap-map-icon {
+  padding-top: 8px;
+}
+
+.map-icon {
+  margin-right: 16px;
+
+  stroke: currentColor;
+  fill: transparent;
 }
 
 .subscribe-link {
@@ -665,12 +676,18 @@ body {
 
 .subscribe-link,
 .subscribe-mail {
-  display: block;
+  display: flex;
+  align-items: center;
+
   color: var(--main-light-text-color);
 }
 
-.subscribe-mail svg {
-  fill: currentColor;
+.mail-icon,
+.phone-icon {
+  margin-right: 16px;
+
+  stroke: currentColor;
+  fill: transparent;
 }
 
 .subscribe-link:hover,
