@@ -302,6 +302,8 @@ img {
   color: var(--accent-color);
 }
 
+/* HERO - POSTER */
+
 .hero-background {
   position: relative;
   display: flex;
@@ -468,10 +470,20 @@ img {
   padding-right: 40px;
   padding-bottom: 30px;
   padding-left: 40px;
+}
 
+.services-list-item-left {
   background-image: linear-gradient(
     180deg,
-    rgba(9, 11, 19, 0.2) 0%,
+    rgb(23, 26, 36) 0%,
+    rgba(23, 26, 36, 0.2) 100%
+  );
+}
+
+.services-list-item-right {
+  background-image: linear-gradient(
+    180deg,
+    #090b13 0%,
     rgba(9, 11, 19, 0.2) 100%
   );
 }
@@ -766,8 +778,8 @@ img {
     ),
     url('../images/contacts/contacts-bg-desktop-opt.jpg');
   background-repeat: no-repeat;
-  background-position: right;
-  background-size: 50%;
+  background-position: right center;
+  background-size: 50% auto;
 }
 
 .subscribe-container {
@@ -780,10 +792,6 @@ img {
   width: 50%;
 }
 
-/* .registration-form {
-  width: 560px;
-} */
-
 .input-wrapper {
   display: flex;
   justify-content: space-between;
@@ -792,6 +800,7 @@ img {
 
 .field-group {
   position: relative;
+  width: 50%;
 }
 
 .field-group:first-child {
@@ -803,28 +812,35 @@ img {
   padding-right: 8px;
   padding-bottom: 8px;
   padding-left: 8px;
+  width: 100%;
   border: none;
   border-bottom: 1px solid rgba(157, 164, 189, 0.4);
 
-  /* font-family: 'Open Sans';
-  font-style: normal; */
   font-weight: 600;
   font-size: 11px;
   line-height: 1.36;
   letter-spacing: 0.1em;
-  text-transform: uppercase;
 
   color: var(--secondary-light-text-color);
   background-color: transparent;
+
+  transition: border-color var(--animation-time) var(--animation-time-function);
 }
 
-/* .field-group:hover {
-  cursor: pointer;
+.form-label {
+  position: absolute;
+  top: 0;
+  left: 0;
 
-  border-color: var(--secondary-light-text-color);
-} */
-.field-group:hover .form-input,
-.form-label:hover > .form-input {
+  transition: transform var(--animation-time) var(--animation-time-function),
+    color var(--animation-time) var(--animation-time-function);
+}
+
+.form-label:hover {
+  cursor: pointer;
+}
+
+.field-group:hover .form-input {
   cursor: pointer;
 
   border-color: var(--secondary-light-text-color);
@@ -840,10 +856,9 @@ img {
   border-color: var(--secondary-light-text-color);
 }
 
-.form-label {
-  position: absolute;
-  top: 0;
-  left: 0;
+.form-input:focus + .form-label,
+.form-input:not(:placeholder-shown) + .form-label {
+  transform: translateY(-100%);
 }
 
 .comments-wrapper {
@@ -861,10 +876,11 @@ img {
   font-size: 11px;
   line-height: 1.36;
   letter-spacing: 0.1em;
-  text-transform: uppercase;
 
   color: var(--secondary-light-text-color);
   background-color: transparent;
+
+  transition: border-color var(--animation-time) var(--animation-time-function);
 }
 
 .form-comments:hover {
@@ -880,6 +896,11 @@ img {
   outline: none;
 
   border-color: var(--secondary-light-text-color);
+}
+
+.form-comments:focus + .form-label,
+.form-comments:not(:placeholder-shown) + .form-label {
+  transform: translateY(-100%);
 }
 
 .btn-submit {

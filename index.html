@@ -125,7 +125,7 @@
           </p>
           <h2 class="title title-light title-services">Услуги и цены</h2>
           <ul class="services-list list">
-            <li class="services-list-item">
+            <li class="services-list-item services-list-item-left">
               <ul class="services-left list">
                 <li class="services-left-item">
                   <p class="text text-light services-text">Мужская стрижка</p>
@@ -147,7 +147,7 @@
                 </li>
               </ul>
             </li>
-            <li class="services-list-item">
+            <li class="services-list-item services-list-item-right">
               <ul class="services-right list">
                 <li class="services-right-item">
                   <p class="text text-light services-text">Cтрижка у стажера</p>
@@ -435,17 +435,19 @@
                     name="username"
                     id="username"
                     class="form-input"
+                    placeholder=" "
                   />
                   <label for="username" class="form-label">имя*</label>
                 </div>
                 <div class="field-group">
-                  <label for="phone" class="form-label">телефон*</label>
                   <input
                     type="tel"
                     name="phone"
                     id="phone"
                     class="form-input"
+                    placeholder=" "
                   />
+                  <label for="phone" class="form-label">телефон*</label>
                 </div>
               </div>
               <div class="comments-wrapper">
@@ -454,11 +456,11 @@
                   id="message"
                   cols="30"
                   rows="4"
+                  placeholder=" "
                   class="form-comments"
                 ></textarea>
                 <label for="message" class="form-label">сообщение</label>
               </div>
-
               <button type="submit" class="btn btn-light btn-submit">
                 отправить
               </button>
