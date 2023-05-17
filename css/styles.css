@@ -62,6 +62,28 @@ img {
   text-decoration: none;
 }
 
+/* LOGO */
+
+.logo {
+  display: block;
+  margin-right: 72px;
+  width: 70px;
+  height: 56px;
+
+  color: var(--secondary-dark-text-color);
+
+  transition: color var(--animation-time) var(--animation-time-function);
+}
+
+.logo__icon {
+  fill: currentColor;
+}
+
+.logo:hover,
+.logo:focus {
+  color: var(--accent-color);
+}
+
 .subtitle {
   font-weight: 600;
   font-size: 11px;
@@ -105,103 +127,7 @@ img {
   color: var(--main-light-text-color);
 }
 
-/* HEADER */
-
-.header {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 999;
-
-  width: 100%;
-  padding-top: 32px;
-}
-
-.container-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.navigation {
-  display: flex;
-  align-items: center;
-}
-
-.logo {
-  display: block;
-  margin-right: 72px;
-  width: 70px;
-  height: 56px;
-
-  color: var(--secondary-dark-text-color);
-
-  transition: color var(--animation-time) var(--animation-time-function);
-}
-
-.logo-icon {
-  fill: currentColor;
-}
-
-.logo:hover,
-.logo:focus {
-  color: var(--accent-color);
-}
-
-.nav-list {
-  display: flex;
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-left: 0;
-  align-items: center;
-}
-
-.nav-link {
-  display: block;
-  margin-right: 40px;
-  padding-top: 12px;
-  padding-bottom: 12px;
-
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 1.33;
-  letter-spacing: 0.1em;
-
-  color: var(--secondary-light-text-color);
-
-  transition: color var(--animation-time) var(--animation-time-function);
-}
-
-.nav-link:hover,
-.nav-link:focus {
-  color: var(--accent-color);
-}
-
-.contact-wrapper {
-  display: flex;
-  align-items: center;
-}
-
-.tel-link {
-  display: block;
-  margin-right: 40px;
-  padding-top: 12px;
-  padding-bottom: 12px;
-
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 1.33;
-  letter-spacing: 0.1em;
-
-  color: var(--secondary-light-text-color);
-
-  transition: color var(--animation-time) var(--animation-time-function);
-}
-
-.tel-link:hover,
-.tel-link:focus {
-  color: var(--accent-color);
-}
+/* BUTTON - ONLINE */
 
 .btn {
   padding-top: 12px;
@@ -222,14 +148,14 @@ img {
   transition: border-color var(--animation-time) var(--animation-time-function);
 }
 
-.btn-light {
+.btn--light {
   color: var(--secondary-light-text-color);
 
   transition: color var(--animation-time) var(--animation-time-function),
     background-color var(--animation-time) var(--animation-time-function);
 }
 
-.btn-dark {
+.btn--dark {
   color: var(--secondary-dark-text-color);
 
   transition: color var(--animation-time) var(--animation-time-function),
@@ -243,22 +169,103 @@ img {
   cursor: pointer;
 }
 
-.btn-light:hover,
-.btn-dark:hover,
-.btn-light:focus,
-.btn-dark:focus {
+.btn--light:hover,
+.btn--dark:hover,
+.btn--light:focus,
+.btn--dark:focus {
   color: var(--secondary-light-text-color);
   background-color: var(--accent-color);
 }
 
-/* HERO */
+/* HEADER */
 
-/* HERO-ASIDE */
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 999;
+
+  width: 100%;
+  padding-top: 32px;
+}
+
+.container__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+}
+
+.navigation__list {
+  display: flex;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  align-items: center;
+}
+
+.navigation__item:not(:last-child) {
+  margin-right: 40px;
+}
+
+.navigation__link {
+  display: block;
+  padding-top: 12px;
+  padding-bottom: 12px;
+
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.1em;
+
+  color: var(--secondary-light-text-color);
+
+  transition: color var(--animation-time) var(--animation-time-function);
+}
+
+.navigation__link:hover,
+.navigation__link:focus {
+  color: var(--accent-color);
+}
+
+.contacts {
+  display: flex;
+  align-items: center;
+}
+
+.contacts__tel {
+  display: block;
+  margin-right: 40px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.1em;
+
+  color: var(--secondary-light-text-color);
+
+  transition: color var(--animation-time) var(--animation-time-function);
+}
+
+.contacts__tel:hover,
+.contacts__tel:focus {
+  color: var(--accent-color);
+}
+
+/* HERO */
 
 .container-hero {
   display: flex;
   justify-content: space-between;
 }
+
+/* HERO-ASIDE */
 
 .hero-aside {
   position: relative;
