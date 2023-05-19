@@ -92,11 +92,11 @@ img {
   text-transform: uppercase;
 }
 
-.subtitle-light {
+.subtitle--light {
   color: var(--subtitles-text-color);
 }
 
-.subtitle-dark {
+.subtitle--dark {
   color: var(--secondary-dark-text-color);
 }
 
@@ -108,11 +108,11 @@ img {
   letter-spacing: 0.05em;
 }
 
-.title-light {
+.title--light {
   color: var(--secondary-light-text-color);
 }
 
-.title-dark {
+.title--dark {
   color: var(--secondary-dark-text-color);
 }
 
@@ -123,7 +123,7 @@ img {
   letter-spacing: 0.02em;
 }
 
-.text-light {
+.text--light {
   color: var(--main-light-text-color);
 }
 
@@ -260,21 +260,21 @@ img {
 
 /* HERO */
 
-.container-hero {
+.container__hero {
   display: flex;
   justify-content: space-between;
 }
 
 /* HERO-ASIDE */
 
-.hero-aside {
+.hero__aside {
   position: relative;
   width: 100%;
   max-width: 70px;
   margin-right: 30px;
 }
 
-.hero-social-list {
+.social {
   position: absolute;
   bottom: 0;
   left: 50%;
@@ -288,7 +288,7 @@ img {
   padding-left: 40px;
 }
 
-.hero-social-list::before {
+.social::before {
   content: '';
   display: block;
   height: 1px;
@@ -298,11 +298,11 @@ img {
   background-color: var(--secondary-dark-text-color);
 }
 
-.hero-social-list-item:not(:last-child) {
+.social__item:not(:last-child) {
   margin-right: 40px;
 }
 
-.hero-link-social {
+.social__link {
   display: block;
 
   font-weight: 600;
@@ -315,14 +315,14 @@ img {
   transition: color var(--animation-time) var(--animation-time-function);
 }
 
-.hero-link-social:hover,
-.hero-link-social:focus {
+.social__link:hover,
+.social__link:focus {
   color: var(--accent-color);
 }
 
 /* HERO - POSTER */
 
-.hero-background {
+.hero__background {
   position: relative;
   display: flex;
   align-items: center;
@@ -342,14 +342,14 @@ img {
   background-size: cover;
 }
 
-.subtitle-hero {
+.hero__subtitle {
   margin-top: 0;
   margin-bottom: 20px;
   display: flex;
   align-items: center;
 }
 
-.subtitle-hero::before {
+.hero__subtitle::before {
   content: '';
   display: block;
   height: 1px;
@@ -359,7 +359,7 @@ img {
   background-color: var(--subtitles-text-color);
 }
 
-.title-hero {
+.hero__title {
   margin-top: 0;
   margin-bottom: 20px;
 
@@ -367,18 +367,18 @@ img {
   line-height: 1.18;
 }
 
-.text-hero {
+.hero__text {
   margin-top: 0;
   margin-bottom: 0;
 }
 
 /* SECTION - ABOUT US */
 
-.container-about {
+.container__about {
   display: flex;
 }
 
-.about-list {
+.about {
   display: flex;
   margin-top: 0;
   margin-bottom: 0;
@@ -386,11 +386,11 @@ img {
   margin-right: 64px;
 }
 
-.about-list-item:not(:last-child) {
+.about__item:not(:last-child) {
   margin-right: 30px;
 }
 
-.subtitle-about {
+.subtitle__about {
   margin-top: 0;
   margin-bottom: 20px;
   display: flex;
@@ -399,7 +399,7 @@ img {
   line-height: 1.18;
 }
 
-.subtitle-about::before {
+.subtitle__about::before {
   content: '';
   display: block;
   height: 1px;
@@ -409,12 +409,12 @@ img {
   background-color: var(--secondary-dark-text-color);
 }
 
-.title-about {
+.title__about {
   margin-top: 0;
   margin-bottom: 20px;
 }
 
-.text-about {
+.text__about {
   margin-top: 0;
   margin-bottom: 20px;
 
@@ -422,7 +422,7 @@ img {
   line-height: 1.86;
 }
 
-.text-about-last {
+.text__about--last {
   margin-bottom: 40px;
 }
 
