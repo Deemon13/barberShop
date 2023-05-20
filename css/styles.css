@@ -798,7 +798,7 @@ img {
 
 /* SECTION - SUBSCRIBE & CONTACTS */
 
-.section-contacts {
+.section__contacts {
   margin-right: auto;
   margin-left: auto;
   max-width: 1600px;
@@ -814,12 +814,12 @@ img {
   background-size: 50% auto;
 }
 
-.subscribe-container {
+.container__subscribe {
   display: flex;
   justify-content: center;
 }
 
-.subscribe-content {
+.subscribe {
   padding-right: 40px;
   width: 50%;
 }
@@ -839,7 +839,7 @@ img {
   margin-right: 30px;
 }
 
-.form-input {
+.registration__input {
   padding-bottom: 8px;
   padding-right: 8px;
   padding-bottom: 8px;
@@ -859,7 +859,7 @@ img {
   transition: border-color var(--animation-time) var(--animation-time-function);
 }
 
-.form-label {
+.registration__label {
   position: absolute;
   top: 0;
   left: 0;
@@ -868,28 +868,28 @@ img {
     color var(--animation-time) var(--animation-time-function);
 }
 
-.form-label:hover {
+.registration__label:hover {
   cursor: pointer;
 }
 
-.field-group:hover .form-input {
+.field-group:hover .registration__input {
   cursor: pointer;
 
   border-color: var(--secondary-light-text-color);
 }
 
-.field-group:hover .form-label {
+.field-group:hover .registration__label {
   color: var(--secondary-light-text-color);
 }
 
-.form-input:focus {
+.registration__input:focus {
   outline: none;
 
   border-color: var(--secondary-light-text-color);
 }
 
-.form-input:focus + .form-label,
-.form-input:not(:placeholder-shown) + .form-label {
+.registration__input:focus + .registration__label,
+.registration__input:not(:placeholder-shown) + .registration__label {
   transform: translateY(-100%);
 }
 
@@ -898,7 +898,7 @@ img {
   margin-bottom: 44px;
 }
 
-.form-comments {
+.registration__comments {
   width: 100%;
   resize: none;
   border: none;
@@ -915,37 +915,37 @@ img {
   transition: border-color var(--animation-time) var(--animation-time-function);
 }
 
-.form-comments:hover {
+.registration__comments:hover {
   cursor: pointer;
   border-color: var(--secondary-light-text-color);
 }
 
-.form-comments:hover + .form-label {
+.registration__comments:hover + .registration__label {
   color: var(--secondary-light-text-color);
 }
 
-.form-comments:focus {
+.registration__comments:focus {
   outline: none;
 
   border-color: var(--secondary-light-text-color);
 }
 
-.form-comments:focus + .form-label,
-.form-comments:not(:placeholder-shown) + .form-label {
+.registration__comments:focus + .registration__label,
+.registration__comments:not(:placeholder-shown) + .registration__label {
   transform: translateY(-100%);
 }
 
-.btn-submit {
+.btn__submit {
   min-width: 160px;
 }
 
-.contacts-content {
+.contact-us {
   width: 50%;
   padding-left: 100px;
 }
 
-.title-subscribe,
-.title-contacts {
+.title__subscribe,
+.title__contact-us {
   margin-top: 0;
   margin-bottom: 44px;
 }
@@ -956,30 +956,18 @@ img {
   font-style: normal;
 }
 
-.address-text {
+.address__text {
   margin-top: 0;
   margin-bottom: 20px;
   display: flex;
   align-items: flex-start;
 }
 
-.wrap-map-icon {
+.address__icon-wrapper {
   padding-top: 8px;
 }
 
-.map-icon {
-  margin-right: 16px;
-
-  stroke: currentColor;
-  fill: transparent;
-}
-
-.subscribe-link {
-  margin-bottom: 20px;
-}
-
-.subscribe-link,
-.subscribe-mail {
+.address__link {
   display: flex;
   align-items: center;
 
@@ -988,22 +976,23 @@ img {
   transition: color var(--animation-time) var(--animation-time-function);
 }
 
-.mail-icon,
-.phone-icon {
+.address__link--phone {
+  margin-bottom: 20px;
+}
+
+.address__icon {
   margin-right: 16px;
 
   stroke: currentColor;
   fill: transparent;
 }
 
-.subscribe-link:hover,
-.subscribe-mail:hover,
-.subscribe-link:focus,
-.subscribe-mail:focus {
+.address__link:hover,
+.address__link:focus {
   color: var(--accent-color);
 }
 
-.subtitle-contacts {
+.subtitle__contacts {
   margin-top: 0;
   margin-bottom: 20px;
   display: flex;
@@ -1014,7 +1003,7 @@ img {
   color: var(--secondary-light-text-color);
 }
 
-.subtitle-contacts::before {
+.subtitle__contacts::before {
   content: '';
   display: block;
   height: 1px;
@@ -1024,7 +1013,7 @@ img {
   background-color: var(--placeholder-text-color);
 }
 
-.text-time {
+.text__time {
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -1038,13 +1027,13 @@ img {
   background-color: var(--alternative-light-bg-color);
 }
 
-.container-footer {
+.container__footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.footer-copyright {
+.footer__copyright {
   font-weight: 600;
   font-size: 11px;
   line-height: 1.36;

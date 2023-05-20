@@ -442,16 +442,16 @@
 
       <!-- SECTION - SUBSCRIBE & CONTACTS -->
 
-      <section class="section section-contacts" id="contacts">
-        <div class="container subscribe-container">
-          <div class="subscribe-content">
-            <h2 class="title title-light title-subscribe">Онлайн-запись</h2>
+      <section class="section section__contacts" id="contacts">
+        <div class="container container__subscribe">
+          <div class="subscribe">
+            <h2 class="title title--light title__subscribe">Онлайн-запись</h2>
             <form
               action="javascript:void(0);"
               autocomplete="off"
               method="post"
               name="registration-form"
-              class="registration-form"
+              class="registration"
             >
               <div class="input-wrapper" role="group">
                 <div class="field-group">
@@ -459,20 +459,22 @@
                     type="text"
                     name="username"
                     id="username"
-                    class="form-input"
+                    class="registration__input"
                     placeholder=" "
                   />
-                  <label for="username" class="form-label">имя*</label>
+                  <label for="username" class="registration__label">имя*</label>
                 </div>
                 <div class="field-group">
                   <input
                     type="tel"
                     name="phone"
                     id="phone"
-                    class="form-input"
+                    class="registration__input"
                     placeholder=" "
                   />
-                  <label for="phone" class="form-label">телефон*</label>
+                  <label for="phone" class="registration__label"
+                    >телефон*</label
+                  >
                 </div>
               </div>
               <div class="comments-wrapper">
@@ -482,42 +484,47 @@
                   cols="30"
                   rows="4"
                   placeholder=" "
-                  class="form-comments"
+                  class="registration__comments"
                 ></textarea>
-                <label for="message" class="form-label">сообщение</label>
+                <label for="message" class="registration__label"
+                  >сообщение</label
+                >
               </div>
-              <button type="submit" class="btn btn-light btn-submit">
+              <button type="submit" class="btn btn--light btn__submit">
                 отправить
               </button>
             </form>
           </div>
-          <div class="contacts-content">
-            <h2 class="title title-light title-contacts">Контакты</h2>
-            <address class="text text-light address">
-              <p class="address-text">
-                <span class="wrap-map-icon">
-                  <svg class="map-icon" width="24" height="24">
+          <div class="contact-us">
+            <h2 class="title title--light title__contact-us">Контакты</h2>
+            <address class="text text--light address">
+              <p class="address__text">
+                <span class="address__icon-wrapper">
+                  <svg class="address__icon" width="24" height="24">
                     <use href="./images/sprite.svg#map"></use>
                   </svg>
                 </span>
 
                 ул. Васильковая, 7А<br />Киев, 08132
               </p>
-              <a href="tel:+380441111111" class="subscribe-link link">
-                <svg class="phone-icon" width="24" height="24">
+              <a
+                href="tel:+380441111111"
+                class="link address__link address__link--phone"
+              >
+                <svg class="address__icon" width="24" height="24">
                   <use href="./images/sprite.svg#phone"></use>
                 </svg>
                 +38 044 111 11 11</a
               >
-              <a href="mailto:barbershop@email.com" class="subscribe-mail link">
-                <svg class="mail-icon" width="24" height="24">
+              <a href="mailto:barbershop@email.com" class="link address__link">
+                <svg class="address__icon" width="24" height="24">
                   <use href="./images/sprite.svg#mail"></use>
                 </svg>
                 barbershop@email.com</a
               >
             </address>
-            <p class="subtitle subtitle-contacts">время работы</p>
-            <p class="text text-light text-time">Ежедневно с 9:00 до 22:00</p>
+            <p class="subtitle subtitle__contacts">время работы</p>
+            <p class="text text--light text__time">Ежедневно с 9:00 до 22:00</p>
           </div>
         </div>
       </section>
@@ -525,8 +532,8 @@
 
     <!-- FOOTER -->
     <footer class="footer">
-      <div class="container container-footer">
-        <p class="footer-copyright">&copy; Copyright 2023</p>
+      <div class="container container__footer">
+        <p class="footer__copyright">&copy; Copyright 2023</p>
         <ul class="footer-social-list list">
           <li class="footer-social-list-item">
             <a href="" class="footer-link-social link">Instagram</a>
