@@ -1,0 +1,19 @@
+:root {
+  --main-bg-color: #ffffff;
+  --secondary-bg-color: #191c26;
+  --alternative-light-bg-color: #f7f7f7;
+  --alternative-dark-bg-color: #111319;
+
+  --main-dark-text-color: #555555;
+  --main-light-text-color: #9da4bd;
+  --subtitles-text-color: rgba(157, 164, 189, 0.6); /* #9da4bd 60% */
+  --placeholder-text-color: rgba(157, 164, 189, 0.4); /* #9da4bd 40% */
+  --dots-color: rgba(157, 164, 189, 0.12); /* #9da4bd 12% */
+  --secondary-dark-text-color: #303030;
+  --secondary-light-text-color: #ffffff;
+
+  --accent-color: #ff6c00;
+
+  --animation-time: 250ms;
+  --animation-time-function: cubic-bezier(0.4, 0, 0.2, 1);
+}

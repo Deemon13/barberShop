@@ -1,0 +1,20 @@
+.logo {
+  @extend %link;
+  display: block;
+  margin-right: 72px;
+  width: 70px;
+  height: 56px;
+
+  color: var(--secondary-dark-text-color);
+
+  transition: color var(--animation-time) var(--animation-time-function);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+.logo__icon {
+  fill: currentColor;
+}

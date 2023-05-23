@@ -1,0 +1,31 @@
+.btn--light {
+  @extend %btn;
+  color: var(--secondary-light-text-color);
+
+  transition: color var(--animation-time) var(--animation-time-function),
+    background-color var(--animation-time) var(--animation-time-function),
+    border-color var(--animation-time) var(--animation-time-function);
+
+  &:hover,
+  &:focus {
+    color: var(--secondary-light-text-color);
+    border-color: transparent;
+    background-color: var(--accent-color);
+  }
+}
+
+.btn--dark {
+  @extend %btn;
+  color: var(--secondary-dark-text-color);
+
+  transition: color var(--animation-time) var(--animation-time-function),
+    background-color var(--animation-time) var(--animation-time-function),
+    border-color var(--animation-time) var(--animation-time-function);
+
+  &:hover,
+  &:focus {
+    color: var(--secondary-light-text-color);
+    border-color: transparent;
+    background-color: var(--accent-color);
+  }
+}

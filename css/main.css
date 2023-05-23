@@ -1,1 +1,242 @@
-/*# sourceMappingURL=main.css.map */
+:root {
+  --main-bg-color: #ffffff;
+  --secondary-bg-color: #191c26;
+  --alternative-light-bg-color: #f7f7f7;
+  --alternative-dark-bg-color: #111319;
+  --main-dark-text-color: #555555;
+  --main-light-text-color: #9da4bd;
+  --subtitles-text-color: rgba(157, 164, 189, 0.6); /* #9da4bd 60% */
+  --placeholder-text-color: rgba(157, 164, 189, 0.4); /* #9da4bd 40% */
+  --dots-color: rgba(157, 164, 189, 0.12); /* #9da4bd 12% */
+  --secondary-dark-text-color: #303030;
+  --secondary-light-text-color: #ffffff;
+  --accent-color: #ff6c00;
+  --animation-time: 250ms;
+  --animation-time-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.menu {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.contacts__tel, .menu__link, .logo {
+  text-decoration: none;
+}
+
+.btn--dark, .btn--light {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border: 1px solid var(--accent-color);
+  border-radius: 25px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  background-color: transparent;
+  cursor: pointer;
+  -webkit-transition: border-color var(--animation-time) var(--animation-time-function);
+  transition: border-color var(--animation-time) var(--animation-time-function);
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  background-color: var(--main-bg-color);
+  color: var(--main-dark-text-color);
+}
+
+img {
+  display: block;
+}
+
+.section {
+  padding-top: 130px;
+  padding-bottom: 130px;
+}
+
+.container {
+  width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.container__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.logo {
+  display: block;
+  margin-right: 72px;
+  width: 70px;
+  height: 56px;
+  color: var(--secondary-dark-text-color);
+  -webkit-transition: color var(--animation-time) var(--animation-time-function);
+  transition: color var(--animation-time) var(--animation-time-function);
+}
+.logo:hover, .logo:focus {
+  color: var(--accent-color);
+}
+
+.logo__icon {
+  fill: currentColor;
+}
+
+.title {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.17;
+  letter-spacing: 0.05em;
+}
+.title--light {
+  color: var(--secondary-light-text-color);
+}
+.title--dark {
+  color: var(--secondary-dark-text-color);
+}
+
+.subtitle {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+.subtitle--light {
+  color: var(--subtitles-text-color);
+}
+.subtitle--dark {
+  color: var(--secondary-dark-text-color);
+}
+
+.text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+}
+.text--light {
+  color: var(--main-light-text-color);
+}
+
+.btn--light {
+  color: var(--secondary-light-text-color);
+  -webkit-transition: color var(--animation-time) var(--animation-time-function), background-color var(--animation-time) var(--animation-time-function), border-color var(--animation-time) var(--animation-time-function);
+  transition: color var(--animation-time) var(--animation-time-function), background-color var(--animation-time) var(--animation-time-function), border-color var(--animation-time) var(--animation-time-function);
+}
+.btn--light:hover, .btn--light:focus {
+  color: var(--secondary-light-text-color);
+  border-color: transparent;
+  background-color: var(--accent-color);
+}
+
+.btn--dark {
+  color: var(--secondary-dark-text-color);
+  -webkit-transition: color var(--animation-time) var(--animation-time-function), background-color var(--animation-time) var(--animation-time-function), border-color var(--animation-time) var(--animation-time-function);
+  transition: color var(--animation-time) var(--animation-time-function), background-color var(--animation-time) var(--animation-time-function), border-color var(--animation-time) var(--animation-time-function);
+}
+.btn--dark:hover, .btn--dark:focus {
+  color: var(--secondary-light-text-color);
+  border-color: transparent;
+  background-color: var(--accent-color);
+}
+
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.menu__item:not(:last-child) {
+  margin-right: 40px;
+}
+
+.menu__link {
+  display: block;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.1em;
+  color: var(--secondary-light-text-color);
+  -webkit-transition: color var(--animation-time) var(--animation-time-function);
+  transition: color var(--animation-time) var(--animation-time-function);
+}
+.menu__link:hover, .menu__link:focus {
+  color: var(--accent-color);
+}
+
+.contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contacts__tel {
+  display: block;
+  margin-right: 40px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.1em;
+  color: var(--secondary-light-text-color);
+  -webkit-transition: color var(--animation-time) var(--animation-time-function);
+  transition: color var(--animation-time) var(--animation-time-function);
+}
+.contacts__tel:hover, .contacts__tel:focus {
+  color: var(--accent-color);
+}
+
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  width: 100%;
+  padding-top: 32px;
+}
+
+.navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}/*# sourceMappingURL=main.css.map */
