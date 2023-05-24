@@ -8,3 +8,19 @@
     color: var(--main-light-text-color);
   }
 }
+
+.text__about {
+  margin-top: 0;
+  margin-bottom: 20px;
+
+  font-size: 14px;
+  line-height: 1.86;
+
+  &--last {
+    margin-bottom: 40px;
+  }
+}
+
+// .text__about--last {
+//   margin-bottom: 40px;
+// }

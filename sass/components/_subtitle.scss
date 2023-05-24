@@ -13,3 +13,22 @@
     color: var(--secondary-dark-text-color);
   }
 }
+
+.subtitle__about {
+  margin-top: 0;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+
+  line-height: 1.18;
+
+  &::before {
+    content: '';
+    display: block;
+    height: 1px;
+    width: 60px;
+    margin-right: 20px;
+
+    background-color: var(--secondary-dark-text-color);
+  }
+}
