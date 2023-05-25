@@ -2,3 +2,39 @@
   padding-top: 130px;
   padding-bottom: 130px;
 }
+
+.section__services {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1600px;
+
+  background-color: var(--alternative-dark-bg-color);
+  background-image: linear-gradient(
+      rgba(17, 19, 25, 0.8),
+      rgba(17, 19, 25, 0.8)
+    ),
+    url('../images/services/services-bg-desktop-opt.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.section__team {
+  background-color: var(--alternative-light-bg-color);
+}
+
+.section__contacts {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1600px;
+
+  background-color: var(--secondary-bg-color);
+  background-image: linear-gradient(
+      rgba(25, 28, 38, 0.9),
+      rgba(25, 28, 38, 0.9)
+    ),
+    url('../images/contacts/contacts-bg-desktop-opt.jpg');
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: 50% auto;
+}

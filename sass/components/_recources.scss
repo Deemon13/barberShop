@@ -10,6 +10,15 @@
   align-items: center;
   padding-left: 40px;
 
+  &--footer {
+    bottom: auto;
+    right: 15px;
+    left: auto;
+    transform: translateX(0) rotate(0deg);
+
+    padding-left: 0;
+  }
+
   &::before {
     content: '';
     display: block;

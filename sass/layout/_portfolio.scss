@@ -1,0 +1,10 @@
+.portfolio {
+  @extend %list;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.portfolio__item {
+  flex-basis: calc((100% - 90px) / 4);
+}

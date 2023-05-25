@@ -1,0 +1,110 @@
+.input-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.field-group {
+  position: relative;
+  width: 50%;
+}
+
+.field-group:first-child {
+  margin-right: 30px;
+}
+
+.registration__input {
+  padding-bottom: 8px;
+  padding-right: 8px;
+  padding-bottom: 8px;
+  padding-left: 8px;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid var(--placeholder-text-color);
+
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+
+  color: var(--secondary-light-text-color);
+  background-color: transparent;
+
+  transition: border-color var(--animation-time) var(--animation-time-function);
+
+  &:focus {
+    outline: none;
+
+    border-color: var(--secondary-light-text-color);
+  }
+}
+
+.registration__label {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  transition: transform var(--animation-time) var(--animation-time-function),
+    color var(--animation-time) var(--animation-time-function);
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.field-group:hover .registration__input {
+  cursor: pointer;
+
+  border-color: var(--secondary-light-text-color);
+}
+
+.field-group:hover .registration__label {
+  color: var(--secondary-light-text-color);
+}
+
+.registration__input:focus + .registration__label,
+.registration__input:not(:placeholder-shown) + .registration__label {
+  transform: translateY(-100%);
+}
+
+.comments-wrapper {
+  position: relative;
+  margin-bottom: 44px;
+}
+
+.registration__comments {
+  width: 100%;
+  resize: none;
+  border: none;
+  border-bottom: 1px solid var(--placeholder-text-color);
+
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+
+  color: var(--secondary-light-text-color);
+  background-color: transparent;
+
+  transition: border-color var(--animation-time) var(--animation-time-function);
+
+  &:hover {
+    cursor: pointer;
+    border-color: var(--secondary-light-text-color);
+  }
+
+  &:focus {
+    outline: none;
+
+    border-color: var(--secondary-light-text-color);
+  }
+}
+
+.registration__comments:hover + .registration__label {
+  color: var(--secondary-light-text-color);
+}
+
+.registration__comments:focus + .registration__label,
+.registration__comments:not(:placeholder-shown) + .registration__label {
+  transform: translateY(-100%);
+}

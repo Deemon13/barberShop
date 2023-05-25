@@ -29,3 +29,8 @@
     background-color: var(--accent-color);
   }
 }
+
+.btn__submit {
+  @extend %btn;
+  min-width: 160px;
+}

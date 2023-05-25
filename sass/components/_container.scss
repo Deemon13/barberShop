@@ -20,3 +20,25 @@
 .container__about {
   display: flex;
 }
+
+.container__services {
+  text-align: center;
+}
+
+.container__advantages {
+  padding-left: 114px;
+  padding-right: 114px;
+  display: flex;
+}
+
+.container__subscribe {
+  display: flex;
+  justify-content: center;
+}
+
+.container__footer {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

@@ -1,0 +1,42 @@
+.address {
+  margin-bottom: 66px;
+
+  font-style: normal;
+}
+
+.address__text {
+  margin-top: 0;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.address__icon-wrapper {
+  padding-top: 8px;
+}
+
+.address__link {
+  @extend %link;
+  display: flex;
+  align-items: center;
+
+  color: var(--main-light-text-color);
+
+  transition: color var(--animation-time) var(--animation-time-function);
+
+  &--phone {
+    margin-bottom: 20px;
+  }
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+.address__icon {
+  margin-right: 16px;
+
+  stroke: currentColor;
+  fill: transparent;
+}
