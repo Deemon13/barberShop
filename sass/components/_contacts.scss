@@ -1,26 +1,57 @@
+// MOBILE
+
 .contacts {
-  display: flex;
-  align-items: center;
+  display: none;
+  // align-items: center;
 }
 
-.contacts__tel {
-  @extend %link;
-  display: block;
-  margin-right: 40px;
-  padding-top: 12px;
-  padding-bottom: 12px;
+// .contacts__tel {
+//   @extend %link;
+//   display: block;
+//   margin-right: 40px;
+//   padding-top: 12px;
+//   padding-bottom: 12px;
 
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 1.33;
-  letter-spacing: 0.1em;
+//   font-weight: 600;
+//   font-size: 12px;
+//   line-height: 1.33;
+//   letter-spacing: 0.1em;
 
-  color: var(--secondary-light-text-color);
+//   color: var(--secondary-light-text-color);
 
-  transition: color var(--animation-time) var(--animation-time-function);
+//   transition: color var(--animation-time) var(--animation-time-function);
 
-  &:hover,
-  &:focus {
-    color: var(--accent-color);
-  }
-}
+//   &:hover,
+//   &:focus {
+//     color: var(--accent-color);
+//   }
+// }
+
+// DESKTOP
+
+// .contacts {
+//   display: flex;
+//   align-items: center;
+// }
+
+// .contacts__tel {
+//   @extend %link;
+//   display: block;
+//   margin-right: 40px;
+//   padding-top: 12px;
+//   padding-bottom: 12px;
+
+//   font-weight: 600;
+//   font-size: 12px;
+//   line-height: 1.33;
+//   letter-spacing: 0.1em;
+
+//   color: var(--secondary-light-text-color);
+
+//   transition: color var(--animation-time) var(--animation-time-function);
+
+//   &:hover,
+//   &:focus {
+//     color: var(--accent-color);
+//   }
+// }

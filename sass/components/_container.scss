@@ -1,44 +1,93 @@
+// MOBILE
+
 .container {
-  width: 1200px;
+  max-width: 480px;
   margin-right: auto;
   margin-left: auto;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
-.container__header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
+// .container__header {
+//   display: flex;
+//   justify-content: space-between;
+//   align-items: center;
+// }
 
-.container__hero {
-  display: flex;
-  justify-content: space-between;
-}
+// .container__hero {
+//   display: flex;
+//   justify-content: space-between;
+// }
 
-.container__about {
-  display: flex;
-}
+// .container__about {
+//   display: flex;
+// }
 
-.container__services {
-  text-align: center;
-}
+// .container__services {
+//   text-align: center;
+// }
 
-.container__advantages {
-  padding-left: 114px;
-  padding-right: 114px;
-  display: flex;
-}
+// .container__advantages {
+//   padding-left: 114px;
+//   padding-right: 114px;
+//   display: flex;
+// }
 
-.container__subscribe {
-  display: flex;
-  justify-content: center;
-}
+// .container__subscribe {
+//   display: flex;
+//   justify-content: center;
+// }
 
-.container__footer {
-  position: relative;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
+// .container__footer {
+//   position: relative;
+//   display: flex;
+//   justify-content: space-between;
+//   align-items: center;
+// }
+
+// DESKTOP
+
+// .container {
+//   width: 1200px;
+//   margin-right: auto;
+//   margin-left: auto;
+//   padding-left: 15px;
+//   padding-right: 15px;
+// }
+
+// .container__header {
+//   display: flex;
+//   justify-content: space-between;
+//   align-items: center;
+// }
+
+// .container__hero {
+//   display: flex;
+//   justify-content: space-between;
+// }
+
+// .container__about {
+//   display: flex;
+// }
+
+// .container__services {
+//   text-align: center;
+// }
+
+// .container__advantages {
+//   padding-left: 114px;
+//   padding-right: 114px;
+//   display: flex;
+// }
+
+// .container__subscribe {
+//   display: flex;
+//   justify-content: center;
+// }
+
+// .container__footer {
+//   position: relative;
+//   display: flex;
+//   justify-content: space-between;
+//   align-items: center;
+// }

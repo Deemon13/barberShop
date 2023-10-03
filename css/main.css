@@ -23,7 +23,7 @@
   list-style: none;
 }
 
-.address__link, .social__link, .recources__link, .contacts__tel, .menu__link, .logo {
+.address__link, .social__link, .recources__link, .menu__link, .logo {
   text-decoration: none;
 }
 
@@ -90,72 +90,11 @@ img {
 }
 
 .container {
-  width: 1200px;
+  max-width: 480px;
   margin-right: auto;
   margin-left: auto;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
-.container__header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.container__hero {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.container__about {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.container__services {
-  text-align: center;
-}
-
-.container__advantages {
-  padding-left: 114px;
-  padding-right: 114px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.container__subscribe {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.container__footer {
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 .logo {
@@ -485,29 +424,7 @@ img {
   }
 }
 .contacts {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.contacts__tel {
-  display: block;
-  margin-right: 40px;
-  padding-top: 12px;
-  padding-bottom: 12px;
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 1.33;
-  letter-spacing: 0.1em;
-  color: var(--secondary-light-text-color);
-  -webkit-transition: color var(--animation-time) var(--animation-time-function);
-  transition: color var(--animation-time) var(--animation-time-function);
-}
-.contacts__tel:hover, .contacts__tel:focus {
-  color: var(--accent-color);
+  display: none;
 }
 
 .recources {
@@ -662,6 +579,9 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 @media screen and (max-width: 767px) {
