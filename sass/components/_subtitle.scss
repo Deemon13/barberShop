@@ -35,24 +35,24 @@
   }
 }
 
-// .subtitle__services {
-//   margin-top: 0;
-//   margin-bottom: 20px;
-//   display: flex;
-//   align-items: center;
+.subtitle__services {
+  margin-top: 0;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
 
-//   text-align: left;
+  text-align: left;
 
-//   &::before {
-//     content: '';
-//     display: block;
-//     height: 1px;
-//     width: 60px;
-//     margin-right: 20px;
+  &::before {
+    content: '';
+    display: block;
+    height: 1px;
+    width: 60px;
+    margin-right: 20px;
 
-//     background-color: var(--subtitles-text-color);
-//   }
-// }
+    background-color: var(--subtitles-text-color);
+  }
+}
 
 // .subtitle__advantages {
 //   margin-top: 0;

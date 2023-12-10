@@ -26,14 +26,21 @@
   }
 }
 
-// .text__services {
-//   margin-top: 0;
-//   margin-bottom: 0;
+.text__services {
+  margin-top: 0;
+  margin-bottom: 0;
 
-//   &:first-child {
-//     order: -1;
-//   }
-// }
+  font-size: 14px;
+  line-height: 2.14; // 30px
+
+  @media screen and (max-width: 409px) {
+    font-size: 10px;
+  }
+
+  &:first-child {
+    order: -1;
+  }
+}
 
 // .text__advantages {
 //   margin-top: 0;
