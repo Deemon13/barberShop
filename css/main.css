@@ -91,6 +91,16 @@ img {
   text-align: center;
 }
 
+.container__advantages {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+}
+
 .logo {
   display: block;
   margin-right: 72px;
@@ -168,6 +178,13 @@ img {
   text-align: left;
 }
 
+.title__advantages {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 42px;
+  line-height: 1.17;
+}
+
 .subtitle {
   font-weight: 600;
   font-size: 11px;
@@ -222,6 +239,25 @@ img {
   background-color: var(--subtitles-text-color);
 }
 
+.subtitle__advantages {
+  margin-top: 0;
+  margin-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.subtitle__advantages::before {
+  content: "";
+  display: block;
+  height: 1px;
+  width: 60px;
+  margin-right: 20px;
+  background-color: var(--secondary-dark-text-color);
+}
+
 .text {
   font-weight: 400;
   font-size: 16px;
@@ -259,6 +295,11 @@ img {
   -webkit-box-ordinal-group: 0;
       -ms-flex-order: -1;
           order: -1;
+}
+
+.text__advantages {
+  margin-top: 0;
+  margin-bottom: 44px;
 }
 
 .btn--light {
@@ -625,7 +666,6 @@ img {
 
 .advantages {
   margin-right: auto;
-  width: 38%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -693,10 +733,6 @@ img {
   line-height: 1.36;
   text-align: center;
   color: var(--secondary-dark-text-color);
-}
-
-.advantages__content {
-  width: 500px;
 }
 
 .team {
