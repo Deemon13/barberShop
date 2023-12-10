@@ -11,17 +11,20 @@
   }
 }
 
-// .text__about {
-//   margin-top: 0;
-//   margin-bottom: 20px;
+.text__about {
+  margin-top: 0;
+  margin-bottom: 20px;
 
-//   font-size: 14px;
-//   line-height: 1.86;
+  font-size: 16px;
+  line-height: 1.63; // 26px
 
-//   &--last {
-//     margin-bottom: 40px;
-//   }
-// }
+  &--last {
+    margin-bottom: 40px;
+
+    font-size: 14px;
+    line-height: 1.86; // 26px
+  }
+}
 
 // .text__services {
 //   margin-top: 0;

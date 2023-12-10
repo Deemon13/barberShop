@@ -1,12 +1,31 @@
+// MOBILE
+
 .about {
   @extend %list;
-  display: flex;
+  display: none;
   margin-top: 0;
   margin-bottom: 0;
   padding-left: 0;
   margin-right: 64px;
 }
 
-.about__item:not(:last-child) {
-  margin-right: 30px;
-}
+// TABLET
+
+// .about__item:not(:last-child) {
+//   margin-right: 30px;
+// }
+
+// DESKTOP
+
+// .about {
+//   @extend %list;
+//   display: flex;
+//   margin-top: 0;
+//   margin-bottom: 0;
+//   padding-left: 0;
+//   margin-right: 64px;
+// }
+
+// .about__item:not(:last-child) {
+//   margin-right: 30px;
+// }
