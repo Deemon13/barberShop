@@ -71,22 +71,22 @@
   }
 }
 
-// .subtitle__team {
-//   margin-top: 0;
-//   margin-bottom: 20px;
-//   display: flex;
-//   align-items: center;
+.subtitle__team {
+  margin-top: 0;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
 
-//   &::before {
-//     content: '';
-//     display: block;
-//     height: 1px;
-//     width: 60px;
-//     margin-right: 20px;
+  &::before {
+    content: '';
+    display: block;
+    height: 1px;
+    width: 60px;
+    margin-right: 20px;
 
-//     background-color: var(--secondary-dark-text-color);
-//   }
-// }
+    background-color: var(--secondary-dark-text-color);
+  }
+}
 
 // .subtitle__portfolio {
 //   margin-top: 0;

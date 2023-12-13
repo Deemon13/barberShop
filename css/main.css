@@ -79,6 +79,10 @@ img {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/services/mobile/services-bg@2x-mobile.jpg");
   }
 }
+.section__team {
+  background-color: var(--alternative-light-bg-color);
+}
+
 .container {
   max-width: 480px;
   margin-right: auto;
@@ -185,6 +189,11 @@ img {
   line-height: 1.17;
 }
 
+.title__team {
+  margin-top: 0;
+  margin-bottom: 44px;
+}
+
 .subtitle {
   font-weight: 600;
   font-size: 11px;
@@ -250,6 +259,25 @@ img {
           align-items: center;
 }
 .subtitle__advantages::before {
+  content: "";
+  display: block;
+  height: 1px;
+  width: 60px;
+  margin-right: 20px;
+  background-color: var(--secondary-dark-text-color);
+}
+
+.subtitle__team {
+  margin-top: 0;
+  margin-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.subtitle__team::before {
   content: "";
   display: block;
   height: 1px;
@@ -735,18 +763,8 @@ img {
   color: var(--secondary-dark-text-color);
 }
 
-.team {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  gap: 30px;
-}
-
-.team__item {
-  -ms-flex-preferred-size: calc((100% - 60px) / 3);
-      flex-basis: calc((100% - 60px) / 3);
+.team__item:not(:last-child) {
+  margin-bottom: 64px;
 }
 
 .team__content {

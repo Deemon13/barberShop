@@ -255,7 +255,7 @@
       </section>
 
       <!-- SECTION - TEAM -->
-      <!-- <section class="section section__team" id="team">
+      <section class="section section__team" id="team">
         <div class="container">
           <p class="subtitle subtitle--dark subtitle__team">
             для настоящих ценителей атмосферы
@@ -263,13 +263,67 @@
           <h2 class="title title--dark title__team">Наши мастера</h2>
           <ul class="team">
             <li class="team__item">
-              <img
+              <!-- <img
                 class="team__img"
                 src="./images/team/john-smith-desktop-opt.jpg"
                 alt="Фотография Джона Смита"
                 width="370"
                 height="346"
-              />
+              /> -->
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/mobile/john-smith-mobile.webp    1x,
+                    ./images/team/mobile/john-smith@2x-mobile.webp 2x
+                  "
+                  media="(max-width: 767px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/team/mobile/john-smith-mobile.jpg    1x,
+                    ./images/team/mobile/john-smith@2x-mobile.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                  type="image/jpeg"
+                />
+                <!-- <source
+                  srcset="
+                    ./images/portfolio/tablet/tehnocrack-tablet.webp    1x,
+                    ./images/portfolio/tablet/tehnocrack@2x-tablet.webp 2x
+                  "
+                  media="(max-width: 1199px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/portfolio/tablet/tehnocrack-tablet.jpg    1x,
+                    ./images/portfolio/tablet/tehnocrack@2x-tablet.jpg 2x
+                  "
+                  media="(max-width: 1199px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="
+                    ./images/portfolio/desktop/tehnocrack-desktop.webp    1x,
+                    ./images/portfolio/desktop/tehnocrack@2x-desktop.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/portfolio/desktop/tehnocrack-desktop.jpg    1x,
+                    ./images/portfolio/desktop/tehnocrack@2x-desktop.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/jpeg"
+                /> -->
+                <img
+                  src="./images/team/mobile/john-smith-mobile.jpg"
+                  alt="Фотография Джона Смита"
+                />
+              </picture>
               <div class="team__content">
                 <h3 lang="en" class="team__name">John Smith</h3>
                 <p lang="en" class="team__prof">Extreme Barber</p>
@@ -306,13 +360,13 @@
               </div>
             </li>
             <li class="team__item">
-              <img
+              <!-- <img
                 class="team__img"
                 src="./images/team/michele-doe-desktop-opt.jpg"
                 alt="Фотография Майкла До"
                 width="370"
                 height="346"
-              />
+              /> -->
               <div class="team__content">
                 <h3 lang="en" class="team__name">Michele Doe</h3>
                 <p lang="en" class="team__prof">Extreme Barber</p>
@@ -349,13 +403,13 @@
               </div>
             </li>
             <li class="team__item">
-              <img
+              <!-- <img
                 class="team__img"
                 src="./images/team/alan-black-desktop-opt.jpg"
                 alt="Фотография Алана Блэка"
                 width="370"
                 height="346"
-              />
+              /> -->
               <div class="team__content">
                 <h3 lang="en" class="team__name">Alan Black</h3>
                 <p lang="en" class="team__prof">Extreme Barber</p>
@@ -393,7 +447,7 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
       <!-- SECTION - PORTFOLIO -->
       <!-- <section class="section">
