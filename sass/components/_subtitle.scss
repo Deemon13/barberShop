@@ -88,22 +88,24 @@
   }
 }
 
-// .subtitle__portfolio {
-//   margin-top: 0;
-//   margin-bottom: 44px;
-//   display: flex;
-//   align-items: center;
+.subtitle__portfolio {
+  margin-top: 0;
+  margin-bottom: 44px;
+  display: flex;
+  align-items: center;
 
-//   &::before {
-//     content: '';
-//     display: block;
-//     height: 1px;
-//     width: 60px;
-//     margin-right: 20px;
+  line-height: 1.91; // 21px
 
-//     background-color: var(--secondary-dark-text-color);
-//   }
-// }
+  &::before {
+    content: '';
+    display: block;
+    height: 1px;
+    width: 60px;
+    margin-right: 20px;
+
+    background-color: var(--secondary-dark-text-color);
+  }
+}
 
 // .subtitle__contact-us {
 //   margin-top: 0;

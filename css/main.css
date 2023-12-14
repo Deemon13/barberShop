@@ -194,6 +194,11 @@ img {
   margin-bottom: 44px;
 }
 
+.title__portfolio {
+  margin-top: 0;
+  margin-bottom: 44px;
+}
+
 .subtitle {
   font-weight: 600;
   font-size: 11px;
@@ -278,6 +283,26 @@ img {
           align-items: center;
 }
 .subtitle__team::before {
+  content: "";
+  display: block;
+  height: 1px;
+  width: 60px;
+  margin-right: 20px;
+  background-color: var(--secondary-dark-text-color);
+}
+
+.subtitle__portfolio {
+  margin-top: 0;
+  margin-bottom: 44px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  line-height: 1.91;
+}
+.subtitle__portfolio::before {
   content: "";
   display: block;
   height: 1px;
@@ -793,18 +818,8 @@ img {
   color: var(--accent-color);
 }
 
-.portfolio {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  gap: 30px;
-}
-
-.portfolio__item {
-  -ms-flex-preferred-size: calc((100% - 90px) / 4);
-      flex-basis: calc((100% - 90px) / 4);
+.portfolio__item:not(:last-child) {
+  margin-bottom: 30px;
 }
 
 .subscribe {
